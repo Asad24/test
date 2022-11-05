@@ -1,0 +1,127 @@
+<html>
+     <head>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+     </head>
+     <body>
+      <h2>The design <br> focused 
+        <span class="title">creative</span>
+        <span class="click-div"></span>
+        <span class="title2">creative</span>
+        <!-- <span>media</span> 
+        <span>production</span> 
+        <span>strategy</span>  -->
+      <br>space</h2>
+          <img class="image" src="images/1.jpg"/>
+          <script>
+               $( document ).ready(function(){
+                    let images = [
+                         "images/1.jpg",
+                         "images/2.jpg",
+                         "images/3.jpg",
+                         "images/4.jpg",
+                         "images/5.jpg",
+                         "images/6.jpg",
+                         "images/7.jpg",
+                         "images/8.jpg",
+                         "images/9.jpg",
+                         "images/10.jpg",
+                         "images/11.jpg",
+                    ];
+                    var i = 0;
+                    window.setInterval(function(){
+                         $('.image'). attr("src", images[i]);
+                         i = (i==images.length-1) ? 0 : i+1;
+                    }, 150);
+
+                    let title = [
+                         "focused",
+                         "creative",
+                         "media",
+                         "production",
+                         "strategy",
+                         "focused",
+                         "creative",
+                         "media",
+                         "production",
+                         "strategy",
+                         "creative",
+                    ];
+                    var i = 0;
+                    window.setInterval(function(){
+                         $('.title'). text( title[i]);
+                         i = (i==title.length-1) ? 0 : i+1;
+                    }, 150);
+
+                    $(".click-div").hover(function(){
+                       $(this).toggleClass("none");
+                       $('.image').toggleClass("start");
+                       $('.title').toggleClass("start");
+                       $('.title2').toggleClass("none");
+                        },
+                      );
+               });
+          </script>
+          <style type="text/css">
+            body, html{
+              padding: 0;
+              margin: 0;
+            }
+            img.image{
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              max-width: 100%;
+              max-width: 100%;
+              height: auto;
+              display: none;
+            }
+            img.image.start{
+              display: block;
+            }
+            .title{
+              position: relative;
+              display: none;
+            }
+            .title.start{
+              display: inline-block;
+            }
+            .title2.none{
+              opacity: 0;
+            }
+            h2 {
+              position: relative;
+              z-index: 9;
+              font-size: 50px;
+              color: #fff;
+              padding: 50px;
+              font-family: 'Pt Root UI', sans-serif;
+              font-family: 'PT Sans', sans-serif;
+              font-size: 7vw;
+              line-height: 1;
+              letter-spacing: -0.25vw;
+              color: #1f1f1f;
+            }
+            h2 span{
+              text-decoration: underline;
+              cursor: pointer;
+            }
+            .click-div {
+              width: 25%;
+              position: absolute;
+              top: 43%;
+              left: 25%;
+              height: 20%;
+              background: #0000ff75;
+            }
+            @media (max-width: 767px){
+            .click-div {
+              width: 28%;
+              left: 30%;
+            }
+            }
+          </style>
+     </body>
+</html>
