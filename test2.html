@@ -21,7 +21,7 @@
           <img src="https://i.postimg.cc/KYkr2bCH/images07.jpg">
           <img src="https://i.postimg.cc/c4hc7XQX/images08.jpg">
           <img src="https://i.postimg.cc/d3v8ry3b/images09.jpg">
-          <img src="https://i.postimg.cc/xTfvdMWH/images10.jpg"> 
+          <img src="https://i.postimg.cc/xTfvdMWH/images10.jpg">
           <img src="https://i.postimg.cc/PxbDX5y2/images11.jpg">
           <img src="https://i.postimg.cc/Y0bmFDJF/images12.jpg">
           <img src="https://i.postimg.cc/J01kGCdm/images13.jpg">
@@ -134,7 +134,7 @@
                     "https://i.postimg.cc/j2JGwBWg/images50.jpg",
                     "https://i.postimg.cc/nzsH2Rj7/images51.jpg",
                     "https://i.postimg.cc/g2YmQkLG/images52.jpg",
-                    "https://i.postimg.cc/vmTM8qvj/images53.jpg", 
+                    "https://i.postimg.cc/vmTM8qvj/images53.jpg",
                     "https://i.postimg.cc/x1Y1Q3hD/images54.jpg",
                     "https://i.postimg.cc/yNp1F4ds/images55.jpg",
                     "https://i.postimg.cc/3J2xzcLF/images56.jpg",
@@ -173,15 +173,25 @@
                     }, 150);
 
                     // $(".click-div").hover(function(){
-                    //    $(this).toggleClass("none");
-                    //    $('.image').toggleClass("start");
-                    //    $('.title').toggleClass("start");
-                    //    $('.title2').toggleClass("none");
+                       // $(this).toggleClass("none");
+                       // $('.image').toggleClass("start");
+                       // $('.title').toggleClass("start");
+                       // $('.title2').toggleClass("none");
                     //     },
                     //   );
-if (window.width() > 300) {
-  //my code
-} 
+
+// if (window.width() > 300) {
+
+// }
+// $(window).ready(function(){
+//     if (window.screen.width <= 700) {
+//         $("html").addClass("mobile");
+//     } else {
+//         $("html").removeClass("mobile");
+//     }
+// });
+
+
 
     // $(document).on('vmousedown touchstart',function(){
     //     $(".click-div").toggleClass("none");
@@ -191,14 +201,16 @@ if (window.width() > 300) {
     // })
 
 
-$('.click-div').on('vmousedown touchstart', function (e) {
-  if (e.type == 'touchstart') {
-    $('.image').addClass("start");
-    $('.title').addClass("start");
-  } else {
-    $('.title').removeClass('start');
-  }
-  return false;
+$(".click-div").hover(function() {
+   $(this).addClass("none");
+   $('.image').addClass("start");
+   $('.title').addClass("start");
+   $('.title2').addClass("none");
+}, function() {
+   $(this).removeClass("none");
+   $('.image').removeClass("start");
+   $('.title').removeClass("start");
+   $('.title2').removeClass("none");
 });
 
 
@@ -210,9 +222,6 @@ $('.click-div').on('vmousedown touchstart', function (e) {
               padding: 0;
               margin: 0;
             }
-               body{
-                    height: 5000px;
-               }
             img.image{
               position: absolute;
               top: 0;
@@ -266,7 +275,7 @@ $('.click-div').on('vmousedown touchstart', function (e) {
               h2{
               padding: 50px 20px;
               }
-            .click-div {
+/*            .click-div {
               width: 100%;
               left: 0;
               height: 50%;
@@ -274,7 +283,14 @@ $('.click-div').on('vmousedown touchstart', function (e) {
               min-height: 50vh; 
               min-width: 100vw;
               z-index: 99999;
+            }*/
             }
+            .click-div {
+              width: 27%;
+              left: 26%;
+              height: 23%;
+              top: 39%;
+              z-index: 99999;
             }
           </style>
      </body>
