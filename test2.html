@@ -10,6 +10,9 @@
         <span class="title">creative</span>
         <span class="click-div"></span>
         <span class="title2">creative</span>
+        <br>space
+      </h2>
+
         <div style="display:none;">
           <img src="https://i.postimg.cc/sDscZtZM/images00.jpg">
           <img src="https://i.postimg.cc/50WvWCBX/images01.jpg">
@@ -76,7 +79,6 @@
           <img src="https://i.postimg.cc/rs12Zv8d/images62.jpg">
           <img src="https://i.postimg.cc/PfYHq8mt/images63.jpg">
         </div>
-      <br>space...</h2>
           <img class="image" src="https://i.postimg.cc/sDscZtZM/images00.jpg"/>
           <script>
                $( document ).ready(function(){
@@ -203,13 +205,13 @@
 
 
 
-$('.click-div').on('mouseenter touchstart', function(){ 
+$('.click-div').on('touchstart', function(){ 
    $(this).addClass("none");
    $('.image').addClass("start");
    $('.title').addClass("start");
    $('.title2').addClass("none");
 });
-$('.click-div').on('mouseleave touchend', function(){
+$('.click-div').on('touchend', function(){
    $(this).removeClass("none");
    $('.image').removeClass("start");
    $('.title').removeClass("start");
