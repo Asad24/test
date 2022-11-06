@@ -76,7 +76,7 @@
           <img src="https://i.postimg.cc/rs12Zv8d/images62.jpg">
           <img src="https://i.postimg.cc/PfYHq8mt/images63.jpg">
         </div>
-      <br>space</h2>
+      <br>space...</h2>
           <img class="image" src="https://i.postimg.cc/sDscZtZM/images00.jpg"/>
           <script>
                $( document ).ready(function(){
@@ -201,18 +201,20 @@
     // })
 
 
-$(".click-div").hover(function() {
+
+
+$('.click-div').on('mouseenter touchstart', function(){ 
    $(this).addClass("none");
    $('.image').addClass("start");
    $('.title').addClass("start");
    $('.title2').addClass("none");
-}, function() {
+});
+$('.click-div').on('mouseleave touchend', function(){
    $(this).removeClass("none");
    $('.image').removeClass("start");
    $('.title').removeClass("start");
    $('.title2').removeClass("none");
 });
-
 
 
                });
@@ -295,4 +297,3 @@ $(".click-div").hover(function() {
           </style>
      </body>
 </html>
-
