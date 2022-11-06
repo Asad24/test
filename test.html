@@ -71,6 +71,10 @@
                         },
                       );
                });
+              //  $(document).bind("contextmenu",function(e){
+              // return false;
+              //   });
+              //  $(window).bind('contextmenu', false);
           </script>
           <style type="text/css">
             body, html{
@@ -127,8 +131,11 @@
             }
             @media (max-width: 767px){
             .click-div {
-              width: 28%;
-              left: 30%;
+              width: 100vw;
+              left: 0;
+              height: 100%;
+              top: 0;
+              min-height: 30vh;
             }
             }
           </style>
