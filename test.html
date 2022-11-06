@@ -10,7 +10,7 @@
         <span class="title">creative</span>
         <span class="click-div"></span>
         <span class="title2">creative</span>
-        <br>space 
+        <br>space
       </h2>
 
         <div style="display:none;">
@@ -305,9 +305,13 @@ $(window).ready(function(){
               opacity: 0.001;
               z-index: 99;
               background: transparent !important;
+              color: transparent !important;
+              -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
             }
-            .click-div:active, .click-div:focus{
+            .click-div:active, .click-div:focus, .click-div:hover{
               background: transparent !important;
+              box-shadow: none;
+              border: none;
             }
             @media (max-width: 767px){
               h2{
