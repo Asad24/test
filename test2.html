@@ -11,7 +11,7 @@
         <span class="click-div"></span>
         <span class="cover-div"></span>
         <span class="title2">creative</span>
-        <br>space...4
+        <br>space
       </h2>
 
         <div style="display:none;">
@@ -175,24 +175,44 @@
                          t = (t==title.length-1) ? 0 : t+1;
                     }, 150);
 
-                    // $(".click-div").hover(function(){
-                       // $(this).toggleClass("none");
-                       // $('.image').toggleClass("start");
-                       // $('.title').toggleClass("start");
-                       // $('.title2').toggleClass("none");
-                    //     },
-                    //   );
+
 
 // if (window.width() > 300) {
 
 // }
-// $(window).ready(function(){
-//     if (window.screen.width <= 700) {
-//         $("html").addClass("mobile");
-//     } else {
-//         $("html").removeClass("mobile");
-//     }
-// });
+$(window).ready(function(){
+    if (window.screen.width <= 700) {
+        
+        $('.click-div').on('touchstart', function(){ 
+           $(this).addClass("none");
+           $('.image').addClass("start");
+           $('.title').addClass("start");
+           $('.title2').addClass("none");
+        });
+        $('.click-div').on('touchend', function(){
+           $(this).removeClass("none");
+           $('.image').removeClass("start");
+           $('.title').removeClass("start");
+           $('.title2').removeClass("none");
+        });
+
+        $('h2').bind('contextmenu', function(e) {
+            return false;
+        })
+        $('img').bind('contextmenu', function(e) {
+            return false;
+        })
+
+    } else {
+         $(".click-div").hover(function(){
+         $(this).toggleClass("none");
+         $('.image').toggleClass("start");
+         $('.title').toggleClass("start");
+         $('.title2').toggleClass("none");
+          },
+        );
+    }
+});
 
 
 
@@ -205,29 +225,6 @@
 
 
 
-
-$('.click-div').on('touchstart', function(){ 
-   $(this).addClass("none");
-   $('.image').addClass("start");
-   $('.title').addClass("start");
-   $('.title2').addClass("none");
-});
-$('.click-div').on('touchend', function(){
-   $(this).removeClass("none");
-   $('.image').removeClass("start");
-   $('.title').removeClass("start");
-   $('.title2').removeClass("none");
-});
-
-
-
-$('h2').bind('contextmenu', function(e) {
-    return false;
-})
-
-$('img').bind('contextmenu', function(e) {
-    return false;
-})
 
 
 
