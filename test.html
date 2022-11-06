@@ -6,10 +6,13 @@
           <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
      </head>
      <body>
-      <h2>The design <br> focused  
+      <h2>The design <br> focused 
         <span class="title">creative</span>
         <span class="click-div"></span>
         <span class="title2">creative</span>
+        <br>space
+      </h2>
+
         <div style="display:none;">
           <img src="https://i.postimg.cc/sDscZtZM/images00.jpg">
           <img src="https://i.postimg.cc/50WvWCBX/images01.jpg">
@@ -76,7 +79,6 @@
           <img src="https://i.postimg.cc/rs12Zv8d/images62.jpg">
           <img src="https://i.postimg.cc/PfYHq8mt/images63.jpg">
         </div>
-      <br>space</h2>
           <img class="image" src="https://i.postimg.cc/sDscZtZM/images00.jpg"/>
           <script>
                $( document ).ready(function(){
@@ -172,18 +174,66 @@
                          t = (t==title.length-1) ? 0 : t+1;
                     }, 150);
 
-                    $(".click-div").hover(function(){
-                       $(this).toggleClass("none");
-                       $('.image').toggleClass("start");
-                       $('.title').toggleClass("start");
-                       $('.title2').toggleClass("none");
-                        },
-                      );
+
+
+// if (window.width() > 300) {
+
+// }
+$(window).ready(function(){
+    if (window.screen.width <= 700) {
+        
+        $('.click-div').on('touchstart', function(){ 
+           $(this).addClass("none");
+           $('.image').addClass("start");
+           $('.title').addClass("start");
+           $('.title2').addClass("none");
+        });
+        $('.click-div').on('touchend', function(){
+           $(this).removeClass("none");
+           $('.image').removeClass("start");
+           $('.title').removeClass("start");
+           $('.title2').removeClass("none");
+        });
+
+        $('h2').bind('contextmenu', function(e) {
+            return false;
+        })
+        $('img').bind('contextmenu', function(e) {
+            return false;
+        })
+
+    } else {
+         $(".click-div").hover(function(){
+         $(this).toggleClass("none");
+         $('.image').toggleClass("start");
+         $('.title').toggleClass("start");
+         $('.title2').toggleClass("none");
+          },
+        );
+    }
+});
+
+
+
+    // $(document).on('vmousedown touchstart',function(){
+    //     $(".click-div").toggleClass("none");
+    //     $(".image").toggleClass("start");
+    //     $(".title").toggleClass("start");
+    //     $(".title2").toggleClass("none");
+    // })
+
+
+
+
+
+
+
+
+
+
+
+
                });
-               $(document).bind("contextmenu",function(e){
-              return false;
-                });
-               $(window).bind('contextmenu', false);
           </script>
           <style type="text/css">
             body, html{
@@ -200,6 +250,11 @@
               max-width: 100%;
               height: auto;
               display: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
             }
             img.image.start{
               display: block;
@@ -237,12 +292,18 @@
               top: 43%;
               left: 25%;
               height: 20%;
+              opacity: 0.001;
+              z-index: 99;
+              background: transparent !important;
+            }
+            .click-div:active, .click-div:focus{
+              background: transparent !important;
             }
             @media (max-width: 767px){
               h2{
               padding: 50px 20px;
               }
-            .click-div {
+/*            .click-div {
               width: 100%;
               left: 0;
               height: 50%;
@@ -250,7 +311,14 @@
               min-height: 50vh; 
               min-width: 100vw;
               z-index: 99999;
+            }*/
             }
+            .click-div {
+              width: 27%;
+              left: 26%;
+              height: 23%;
+              top: 39%;
+              z-index: 99999;
             }
           </style>
      </body>
