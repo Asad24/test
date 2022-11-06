@@ -6,7 +6,7 @@
           <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
      </head>
      <body>
-      <h2>The design <br> focused  
+      <h2>The design <br> focused 
         <span class="title">creative</span>
         <span class="click-div"></span>
         <span class="title2">creative</span>
@@ -236,6 +236,11 @@ $('.click-div').on('touchend', function(){
               max-width: 100%;
               height: auto;
               display: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
             }
             img.image.start{
               display: block;
@@ -251,7 +256,7 @@ $('.click-div').on('touchend', function(){
               opacity: 0;
             }
             h2 {
-              position: relative; 
+              position: relative;
               z-index: 9;
               font-size: 50px;
               color: #fff;
