@@ -9,8 +9,9 @@
       <h2>The design <br> focused 
         <span class="title">creative</span>
         <span class="click-div"></span>
+        <span class="cover-div"></span>
         <span class="title2">creative</span>
-        <br>space...2
+        <br>space
       </h2>
 
         <div style="display:none;">
@@ -264,7 +265,7 @@ $('.click-div').on('touchend', function(){
               font-family: 'Pt Root UI', sans-serif;
               font-family: 'PT Sans', sans-serif;
               font-size: 7vw;
-              line-height: 1;  
+              line-height: 1;
               letter-spacing: -0.25vw;
               color: #1f1f1f;
             }
@@ -279,6 +280,16 @@ $('.click-div').on('touchend', function(){
               left: 25%;
               height: 20%;
               opacity: 0.001;
+              z-index: 99;
+            }
+            .cover-div{
+              width: 100%;
+              position: absolute;
+              top: 0%;
+              left: 0%;
+              height: 100%;
+              opacity: 0.001;
+              z-index: 98;
             }
             @media (max-width: 767px){
               h2{
