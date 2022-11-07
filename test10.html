@@ -1,0 +1,244 @@
+<html>
+     <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+     </head>
+     <body>
+      <div class="sShow">
+        <h2>The design <br> focused 
+          <span class="title1">creative</span>
+          <span class="click-div"></span>
+          <span class="title2">creative</span>
+          <br>space
+        </h2>
+          <img class="image" src="https://i.ibb.co/ZY7nJbW/images00.jpg"/>
+      </div>
+
+          <script>
+              $( document ).ready(function() {
+                    let images = [
+
+                      "https://i.ibb.co/pbBTwpz/images00.jpg",
+                      "https://i.ibb.co/SxvpF4m/images01.jpg",
+                      "https://i.ibb.co/17Xb3s8/images02.jpg",
+                      "https://i.ibb.co/54qkX2W/images03.jpg",
+                      "https://i.ibb.co/hZF1cqB/images04.jpg",
+                      "https://i.ibb.co/3k93VjY/images05.jpg",
+                      "https://i.ibb.co/443bb7Y/images06.jpg",
+                      "https://i.ibb.co/Vq8XswF/images07.jpg",
+                      "https://i.ibb.co/2ngGNQM/images08.jpg",
+                      "https://i.ibb.co/jhNdQDm/images09.jpg",
+                      "https://i.ibb.co/NCRyxyG/images10.jpg",
+                      "https://i.ibb.co/nwZx4Nc/images11.jpg",
+                      "https://i.ibb.co/QDYbq88/images12.jpg",
+                      "https://i.ibb.co/wYMH1Y8/images13.jpg",
+                      "https://i.ibb.co/7zHw4m8/images14.jpg",
+                      "https://i.ibb.co/1TRCcKj/images15.jpg",
+                      "https://i.ibb.co/f86H830/images16.jpg",
+                      "https://i.ibb.co/6sKLnry/images17.jpg",
+                      "https://i.ibb.co/PT8Fkrh/images18.jpg",
+                      "https://i.ibb.co/w0kmWCD/images19.jpg",
+                      "https://i.ibb.co/pRH9PXM/images20.jpg",
+                      "https://i.ibb.co/y5QrpmC/images21.jpg",
+                      "https://i.ibb.co/DtLmr72/images22.jpg",
+                      "https://i.ibb.co/YZvyhtW/images23.jpg",
+                      "https://i.ibb.co/51JjGLZ/images24.jpg",
+                      "https://i.ibb.co/y4YdHHQ/images25.jpg",
+                      "https://i.ibb.co/NF3TK8v/images26.jpg",
+                      "https://i.ibb.co/QDX9VPp/images27.jpg",
+                      "https://i.ibb.co/wS3HtzV/images28.jpg",
+                      "https://i.ibb.co/rH4pSj7/images29.jpg",
+                      "https://i.ibb.co/SR1DkL3/images30.jpg",
+                      "https://i.ibb.co/n7078tc/images31.jpg",
+                      "https://i.ibb.co/Q9Z8ZP5/images32.jpg",
+                      "https://i.ibb.co/9HF6jPf/images33.jpg",
+                      "https://i.ibb.co/ydC5Vzc/images34.jpg",
+                      "https://i.ibb.co/pPYYpcK/images35.jpg",
+                      "https://i.ibb.co/Lt5W47J/images36.jpg",
+                      "https://i.ibb.co/ZXq6nYM/images37.jpg",
+                      "https://i.ibb.co/17X9HJF/images38.jpg",
+                      "https://i.ibb.co/jW9Ytv3/images39.jpg",
+                      "https://i.ibb.co/9bNnzcn/images40.jpg",
+                      "https://i.ibb.co/TgVJPPW/images41.jpg",
+                      "https://i.ibb.co/6XG36Zc/images42.jpg",
+                      "https://i.ibb.co/rHT9D2z/images43.jpg",
+                      "https://i.ibb.co/HzK9rvp/images44.jpg",
+                      "https://i.ibb.co/mJpZ2Xd/images45.jpg",
+                      "https://i.ibb.co/kDGPY8X/images46.jpg",
+                      "https://i.ibb.co/gDwvQBP/images47.jpg",
+                      "https://i.ibb.co/PNnQCfL/images48.jpg",
+                      "https://i.ibb.co/FKfgb7k/images49.jpg",
+                      "https://i.ibb.co/SyPS4Kd/images50.jpg",
+                      "https://i.ibb.co/BjsN5b7/images51.jpg",
+                      "https://i.ibb.co/RBMzR6b/images52.jpg",
+                      "https://i.ibb.co/YPJMV1y/images53.jpg",
+                      "https://i.ibb.co/82mSy7X/images54.jpg",
+                      "https://i.ibb.co/WFXqN6k/images55.jpg",
+                      "https://i.ibb.co/2cFLxgp/images56.jpg",
+                      "https://i.ibb.co/C91CKpV/images57.jpg",
+                      "https://i.ibb.co/2sD767n/images58.jpg",
+                      "https://i.ibb.co/Tcy9h32/images59.jpg",
+                      "https://i.ibb.co/ypkcYYY/images60.jpg",
+                      "https://i.ibb.co/1GcFg0x/images61.jpg",
+                      "https://i.ibb.co/p2nytDy/images62.jpg",
+                      "https://i.ibb.co/tXRS4c1/images63.jpg",
+
+
+                    ];
+                    var i = 0;
+                    window.setInterval(function(){
+                         $('.sShow .image'). attr("src", images[i]);
+                         i = (i==images.length-1) ? 0 : i+1;
+                    }, 120);
+
+                    let title = [
+                         "focused",
+                         "creative",
+                         "media",
+                         "production",
+                         "strategy",
+                         "focused",
+                         "creative",
+                         "media",
+                         "production",
+                         "strategy",
+                         "creative",
+                    ];
+                    var t = 0;
+                    window.setInterval(function(){
+                         $('.title1'). text( title[t]);
+                         t = (t==title.length-1) ? 0 : t+1;
+                    }, 120);
+
+               });
+
+
+                $(window).ready(function(){
+                    if (window.screen.width <= 700) {
+                        
+                        $('.click-div').on('touchstart', function(){ 
+                           $(this).addClass("none");
+                           $('.sShow .image').addClass("start");
+                           $('.title1').addClass("start");
+                           $('.title2').addClass("none");
+                        });
+                        $('.click-div').on('touchend', function(){
+                           $(this).removeClass("none");
+                           $('.sShow .image').removeClass("start");
+                           $('.title1').removeClass("start");
+                           $('.title2').removeClass("none");
+                        });
+
+                        $('.sShow h2').bind('contextmenu', function(e) {
+                            return false;
+                        });
+                        $('.sShow img').bind('contextmenu', function(e) {
+                            return false;
+                        });
+
+                    } else {
+                         $(".click-div").hover(function(){
+                         $(this).toggleClass("none");
+                         $('.sShow .image').toggleClass("start");
+                         $('.title1').toggleClass("start");
+                         $('.title2').toggleClass("none");
+                          },
+                        );
+                    }
+                });
+          </script>
+          <style type="text/css">
+            body, html{
+              padding: 0;
+              margin: 0;
+            }
+            .sShow img.image{
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              max-width: 100%;
+              height: auto;
+              display: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            }
+            img.image.start{
+              display: block;
+            }
+            .title1{
+              position: relative;
+              display: none;
+            }
+            .title1.start{
+              display: inline-block;
+            }
+            .title2.none{
+              opacity: 0;
+            }
+            .sShow h2 {
+              position: relative;
+              z-index: 9;
+              font-size: 50px;
+              color: #fff;
+              padding: 50px;
+              font-family: 'Pt Root UI', sans-serif;
+              font-family: 'PT Sans', sans-serif;
+              font-size: 7vw;
+              line-height: 1;
+              letter-spacing: -0.25vw;
+              color: #1f1f1f;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            }
+            .sShow h2 span{
+              text-decoration: underline;
+              cursor: pointer;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            }
+            .click-div {
+              width: 25%;
+              position: absolute;
+              top: 43%;
+              left: 25%;
+              height: 20%;
+              opacity: 0.001;
+              z-index: 99;
+              background: transparent !important;
+              color: transparent !important;
+              -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+            }
+            .click-div:active, .click-div:focus, .click-div:hover{
+              background: transparent !important;
+              box-shadow: none;
+              border: none;
+            }
+            @media (max-width: 767px){
+              .sShow h2{
+              padding: 50px 20px;
+              }
+              .click-div {
+                width: 27%;
+                left: 26%;
+                height: 23%;
+                top: 39%;
+                z-index: 99999;
+              }
+            }
+          </style>
+     </body>
+</html>
