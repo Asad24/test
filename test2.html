@@ -6,14 +6,13 @@
           <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
      </head>
      <body>
-      <h2>The design <br> focused 
-        <span class="title">creative</span>
-        <span class="click-div"></span>
-        <span class="cover-div"></span>
-        <span class="title2">creative</span>
-        <br>space...5
-      </h2>
-
+      <div class="sShow">
+        <h2>The design <br> focused 
+          <span class="title1">creative</span>
+          <span class="click-div"></span>
+          <span class="title2">creative</span>
+          <br>space
+        </h2>
         <div style="display:none;">
           <img src="https://i.postimg.cc/sDscZtZM/images00.jpg">
           <img src="https://i.postimg.cc/50WvWCBX/images01.jpg">
@@ -81,68 +80,11 @@
           <img src="https://i.postimg.cc/PfYHq8mt/images63.jpg">
         </div>
           <img class="image" src="https://i.postimg.cc/sDscZtZM/images00.jpg"/>
+      </div>
+
           <script>
                $( document ).ready(function(){
                     let images = [
-                    "https://i.postimg.cc/sDscZtZM/images00.jpg",
-                    "https://i.postimg.cc/50WvWCBX/images01.jpg",
-                    "https://i.postimg.cc/BZc5sMw4/images02.jpg",
-                    "https://i.postimg.cc/FzZ0ZHJ7/images03.jpg",
-                    "https://i.postimg.cc/7Zc0XcbM/images04.jpg",
-                    "https://i.postimg.cc/Ls1fWT1d/images05.jpg",
-                    "https://i.postimg.cc/Hs6Q8jgN/images06.jpg",
-                    "https://i.postimg.cc/KYkr2bCH/images07.jpg",
-                    "https://i.postimg.cc/c4hc7XQX/images08.jpg",
-                    "https://i.postimg.cc/d3v8ry3b/images09.jpg",
-                    "https://i.postimg.cc/xTfvdMWH/images10.jpg",
-                    "https://i.postimg.cc/PxbDX5y2/images11.jpg",
-                    "https://i.postimg.cc/Y0bmFDJF/images12.jpg",
-                    "https://i.postimg.cc/J01kGCdm/images13.jpg",
-                    "https://i.postimg.cc/DfgGRm8z/images14.jpg",
-                    "https://i.postimg.cc/nchmxZDG/images15.jpg",
-                    "https://i.postimg.cc/pXcFX7Qb/images16.jpg",
-                    "https://i.postimg.cc/SxXzXrVX/images17.jpg",
-                    "https://i.postimg.cc/Z5yCYqKp/images18.jpg",
-                    "https://i.postimg.cc/v8313jNg/images19.jpg",
-                    "https://i.postimg.cc/rm9d6YyH/images20.jpg",
-                    "https://i.postimg.cc/WzWhzFk6/images21.jpg",
-                    "https://i.postimg.cc/7L8b5yfc/images22.jpg",
-                    "https://i.postimg.cc/28t1fWmC/images23.jpg",
-                    "https://i.postimg.cc/sXzBNRzS/images24.jpg",
-                    "https://i.postimg.cc/tCJsf5Kr/images25.jpg",
-                    "https://i.postimg.cc/tg3JPm6g/images26.jpg",
-                    "https://i.postimg.cc/3R3RZCjF/images27.jpg",
-                    "https://i.postimg.cc/MpRp2rdY/images28.jpg",
-                    "https://i.postimg.cc/2815T5WM/images29.jpg",
-                    "https://i.postimg.cc/RhDZ9kkg/images30.jpg",
-                    "https://i.postimg.cc/9FsQkjtM/images31.jpg",
-                    "https://i.postimg.cc/wBpT6crY/images32.jpg",
-                    "https://i.postimg.cc/7LnPbJvG/images33.jpg",
-                    "https://i.postimg.cc/h4yj9mXV/images34.jpg",
-                    "https://i.postimg.cc/wvW6QKj9/images35.jpg",
-                    "https://i.postimg.cc/RhNvPPWK/images36.jpg",
-                    "https://i.postimg.cc/sxqsbpW8/images37.jpg",
-                    "https://i.postimg.cc/jdnsPF0r/images38.jpg",
-                    "https://i.postimg.cc/nVPFstWk/images39.jpg",
-                    "https://i.postimg.cc/52cf3SbQ/images40.jpg",
-                    "https://i.postimg.cc/N0BBhGyg/images41.jpg",
-                    "https://i.postimg.cc/15FQfVwm/images42.jpg",
-                    "https://i.postimg.cc/C53pcwTp/images43.jpg",
-                    "https://i.postimg.cc/rmYktSfm/images44.jpg",
-                    "https://i.postimg.cc/63QK3HLg/images45.jpg",
-                    "https://i.postimg.cc/DfHhvPWp/images46.jpg",
-                    "https://i.postimg.cc/YCwwg2z1/images47.jpg",
-                    "https://i.postimg.cc/j51pjRjn/images48.jpg",
-                    "https://i.postimg.cc/kgFPyrTL/images49.jpg",
-                    "https://i.postimg.cc/j2JGwBWg/images50.jpg",
-                    "https://i.postimg.cc/nzsH2Rj7/images51.jpg",
-                    "https://i.postimg.cc/g2YmQkLG/images52.jpg",
-                    "https://i.postimg.cc/vmTM8qvj/images53.jpg",
-                    "https://i.postimg.cc/x1Y1Q3hD/images54.jpg",
-                    "https://i.postimg.cc/yNp1F4ds/images55.jpg",
-                    "https://i.postimg.cc/3J2xzcLF/images56.jpg",
-                    "https://i.postimg.cc/LXrmbtLW/images57.jpg",
-                    "https://i.postimg.cc/zGjXGRYL/images58.jpg",
                     "https://i.postimg.cc/pXM2QB2h/images59.jpg",
                     "https://i.postimg.cc/rsXLJ8LX/images60.jpg",
                     "https://i.postimg.cc/bJ2hkZW9/images61.jpg",
@@ -152,9 +94,9 @@
                     ];
                     var i = 0;
                     window.setInterval(function(){
-                         $('.image'). attr("src", images[i]);
+                         $('.sShow .image'). attr("src", images[i]);
                          i = (i==images.length-1) ? 0 : i+1;
-                    }, 150);
+                    }, 120);
 
                     let title = [
                          "focused",
@@ -171,69 +113,43 @@
                     ];
                     var t = 0;
                     window.setInterval(function(){
-                         $('.title'). text( title[t]);
+                         $('.title1'). text( title[t]);
                          t = (t==title.length-1) ? 0 : t+1;
-                    }, 150);
+                    }, 120);
 
+                    $(window).ready(function(){
+                        if (window.screen.width <= 700) {
+                            
+                            $('.click-div').on('touchstart', function(){ 
+                               $(this).addClass("none");
+                               $('.sShow .image').addClass("start");
+                               $('.title1').addClass("start");
+                               $('.title2').addClass("none");
+                            });
+                            $('.click-div').on('touchend', function(){
+                               $(this).removeClass("none");
+                               $('.sShow .image').removeClass("start");
+                               $('.title1').removeClass("start");
+                               $('.title2').removeClass("none");
+                            });
 
+                            $('.sShow h2').bind('contextmenu', function(e) {
+                                return false;
+                            });
+                            $('.sShow img').bind('contextmenu', function(e) {
+                                return false;
+                            });
 
-// if (window.width() > 300) {
-
-// }
-$(window).ready(function(){
-    if (window.screen.width <= 700) {
-        
-        $('.click-div').on('touchstart', function(){ 
-           $(this).addClass("none");
-           $('.image').addClass("start");
-           $('.title').addClass("start");
-           $('.title2').addClass("none");
-        });
-        $('.click-div').on('touchend', function(){
-           $(this).removeClass("none");
-           $('.image').removeClass("start");
-           $('.title').removeClass("start");
-           $('.title2').removeClass("none");
-        });
-
-        $('h2').bind('contextmenu', function(e) {
-            return false;
-        })
-        $('img').bind('contextmenu', function(e) {
-            return false;
-        })
-
-    } else {
-         $(".click-div").hover(function(){
-         $(this).toggleClass("none");
-         $('.image').toggleClass("start");
-         $('.title').toggleClass("start");
-         $('.title2').toggleClass("none");
-          },
-        );
-    }
-});
-
-
-
-    // $(document).on('vmousedown touchstart',function(){
-    //     $(".click-div").toggleClass("none");
-    //     $(".image").toggleClass("start");
-    //     $(".title").toggleClass("start");
-    //     $(".title2").toggleClass("none");
-    // })
-
-
-
-
-
-
-
-
-
-
-
-
+                        } else {
+                             $(".click-div").hover(function(){
+                             $(this).toggleClass("none");
+                             $('.sShow .image').toggleClass("start");
+                             $('.title1').toggleClass("start");
+                             $('.title2').toggleClass("none");
+                              },
+                            );
+                        }
+                    });
                });
           </script>
           <style type="text/css">
@@ -241,7 +157,7 @@ $(window).ready(function(){
               padding: 0;
               margin: 0;
             }
-            img.image{
+            .sShow img.image{
               position: absolute;
               top: 0;
               left: 0;
@@ -260,17 +176,17 @@ $(window).ready(function(){
             img.image.start{
               display: block;
             }
-            .title{
+            .title1{
               position: relative;
               display: none;
             }
-            .title.start{
+            .title1.start{
               display: inline-block;
             }
             .title2.none{
               opacity: 0;
             }
-            h2 {
+            .sShow h2 {
               position: relative;
               z-index: 9;
               font-size: 50px;
@@ -282,10 +198,20 @@ $(window).ready(function(){
               line-height: 1;
               letter-spacing: -0.25vw;
               color: #1f1f1f;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
             }
-            h2 span{
+            .sShow h2 span{
               text-decoration: underline;
               cursor: pointer;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
             }
             .click-div {
               width: 25%;
@@ -295,36 +221,26 @@ $(window).ready(function(){
               height: 20%;
               opacity: 0.001;
               z-index: 99;
+              background: transparent !important;
+              color: transparent !important;
+              -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
             }
-            .cover-div{
-              width: 100%;
-              position: absolute;
-              top: 0%;
-              left: 0%;
-              height: 100%;
-              opacity: 0.001;
-              z-index: 98;
+            .click-div:active, .click-div:focus, .click-div:hover{
+              background: transparent !important;
+              box-shadow: none;
+              border: none;
             }
             @media (max-width: 767px){
-              h2{
+              .sShow h2{
               padding: 50px 20px;
               }
-/*            .click-div {
-              width: 100%;
-              left: 0;
-              height: 50%;
-              top: 0;
-              min-height: 50vh; 
-              min-width: 100vw;
-              z-index: 99999;
-            }*/
-            }
-            .click-div {
-              width: 27%;
-              left: 26%;
-              height: 23%;
-              top: 39%;
-              z-index: 99999;
+              .click-div {
+                width: 27%;
+                left: 26%;
+                height: 23%;
+                top: 39%;
+                z-index: 99999;
+              }
             }
           </style>
      </body>
