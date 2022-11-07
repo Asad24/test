@@ -5,14 +5,14 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
      </head>
-     <body> 
+     <body>
       <div class="sShow">
         <h2>The design <br> focused 
           <span class="title1">creative</span>
           <span class="click-div"></span>
           <span class="title2">creative</span>
           <br>space
-        </h2> 
+        </h2>
         <div style="display:none;">
           <img src="https://i.postimg.cc/sDscZtZM/images00.jpg">
           <img src="https://i.postimg.cc/50WvWCBX/images01.jpg">
@@ -83,7 +83,7 @@
       </div>
 
           <script>
-               $( document ).ready(function(){
+              $( document ).ready(function() {
                     let images = [
                     "https://i.postimg.cc/sDscZtZM/images00.jpg",
                     "https://i.postimg.cc/50WvWCBX/images01.jpg",
@@ -148,7 +148,7 @@
                     "https://i.postimg.cc/rsXLJ8LX/images60.jpg",
                     "https://i.postimg.cc/bJ2hkZW9/images61.jpg",
                     "https://i.postimg.cc/rs12Zv8d/images62.jpg",
-                    "https://i.postimg.cc/PfYHq8mt/images63.jpg",
+                    "https://i.postimg.cc/PfYHq8mt/images63.jpg"
 
                     ];
                     var i = 0;
@@ -176,40 +176,42 @@
                          t = (t==title.length-1) ? 0 : t+1;
                     }, 120);
 
-                    $(window).ready(function(){
-                        if (window.screen.width <= 700) {
-                            
-                            $('.click-div').on('touchstart', function(){ 
-                               $(this).addClass("none");
-                               $('.sShow .image').addClass("start");
-                               $('.title1').addClass("start");
-                               $('.title2').addClass("none");
-                            });
-                            $('.click-div').on('touchend', function(){
-                               $(this).removeClass("none");
-                               $('.sShow .image').removeClass("start");
-                               $('.title1').removeClass("start");
-                               $('.title2').removeClass("none");
-                            });
-
-                            $('.sShow h2').bind('contextmenu', function(e) {
-                                return false;
-                            });
-                            $('.sShow img').bind('contextmenu', function(e) {
-                                return false;
-                            });
-
-                        } else {
-                             $(".click-div").hover(function(){
-                             $(this).toggleClass("none");
-                             $('.sShow .image').toggleClass("start");
-                             $('.title1').toggleClass("start");
-                             $('.title2').toggleClass("none");
-                              },
-                            );
-                        }
-                    });
                });
+
+
+                $(window).ready(function(){
+                    if (window.screen.width <= 700) {
+                        
+                        $('.click-div').on('touchstart', function(){ 
+                           $(this).addClass("none");
+                           $('.sShow .image').addClass("start");
+                           $('.title1').addClass("start");
+                           $('.title2').addClass("none");
+                        });
+                        $('.click-div').on('touchend', function(){
+                           $(this).removeClass("none");
+                           $('.sShow .image').removeClass("start");
+                           $('.title1').removeClass("start");
+                           $('.title2').removeClass("none");
+                        });
+
+                        $('.sShow h2').bind('contextmenu', function(e) {
+                            return false;
+                        });
+                        $('.sShow img').bind('contextmenu', function(e) {
+                            return false;
+                        });
+
+                    } else {
+                         $(".click-div").hover(function(){
+                         $(this).toggleClass("none");
+                         $('.sShow .image').toggleClass("start");
+                         $('.title1').toggleClass("start");
+                         $('.title2').toggleClass("none");
+                          },
+                        );
+                    }
+                });
           </script>
           <style type="text/css">
             body, html{
@@ -304,5 +306,3 @@
           </style>
      </body>
 </html>
-
-
