@@ -5,7 +5,7 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
      </head>
-     <body> 
+     <body>
       <div class="sShow">
         <h2>The design <br> focused 
           <span class="title1">creative</span>
@@ -91,7 +91,7 @@
                     window.setInterval(function(){
                          $('.sShow .image'). attr("src", images[i]);
                          i = (i==images.length-1) ? 0 : i+1;
-                    }, 200);
+                    }, 100);
 
                     let title = [
                          "focused",
@@ -110,7 +110,7 @@
                     window.setInterval(function(){
                          $('.title1'). text( title[t]);
                          t = (t==title.length-1) ? 0 : t+1;
-                    }, 200);
+                    }, 150);
 
                });
 
@@ -123,12 +123,14 @@
                            $('.sShow .image').addClass("start");
                            $('.title1').addClass("start");
                            $('.title2').addClass("none");
+                           $('.sShow h2').addClass("white");
                         });
                         $('.click-div').on('touchend', function(){
                            $(this).removeClass("none");
                            $('.sShow .image').removeClass("start");
                            $('.title1').removeClass("start");
                            $('.title2').removeClass("none");
+                           $('.sShow h2').removeClass("white");
                         });
 
                         $('.sShow h2').bind('contextmenu', function(e) {
@@ -144,6 +146,7 @@
                          $('.sShow .image').toggleClass("start");
                          $('.title1').toggleClass("start");
                          $('.title2').toggleClass("none");
+                         $('.sShow h2').toggleClass("white");
                           },
                         );
                     }
@@ -153,6 +156,7 @@
             body, html{
               padding: 0;
               margin: 0;
+              overflow-x: hidden;
             }
             .sShow img.image{
               position: absolute;
@@ -160,8 +164,7 @@
               left: 0;
               right: 0;
               bottom: 0;
-              width: 100%;
-              max-width: 100%;
+              width: 100vw;
               height: auto;
               display: none;
             -webkit-user-select: none;
@@ -226,6 +229,9 @@
               background: transparent !important;
               box-shadow: none;
               border: none;
+            }
+            h2.white{
+              color: #fff !important;
             }
             @media (max-width: 767px){
               .sShow h2{
