@@ -93,7 +93,7 @@
                     window.setInterval(function(){
                          $('.sShow .image'). attr("src", images[i]);
                          i = (i==images.length-1) ? 0 : i+1;
-                    }, 100);
+                    }, 300);
 
                     let title = [
                          "focused",
@@ -250,6 +250,11 @@
                 width: auto;
                 height: 100vh;
                 object-fit: cover;
+                margin: 0 auto;
+                text-align: center;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
               }
             }
           </style>
